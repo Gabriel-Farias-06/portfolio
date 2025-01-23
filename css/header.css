@@ -1,0 +1,81 @@
+.top-bar {
+  display: flex;
+  gap: 160px;
+}
+
+.logo {
+  position: relative;
+}
+
+.atalhos a {
+  font: 600 1.2rem/1.25 "Poppins";
+  padding: 12px 24px;
+  background-color: var(--c1);
+  border-radius: 4px;
+}
+
+.atalhos a:hover {
+  background-color: var(--c4);
+}
+
+.atalhos {
+  display: flex;
+  gap: 2rem;
+  margin-top: 16px;
+  place-content: center;
+}
+
+.download {
+  white-space: nowrap;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  font: 600 1.3rem/1.25 "Poppins";
+}
+
+.download::before {
+  content: "";
+  margin-right: 8px;
+  background: url("../img/download.svg") no-repeat center;
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-width: 1300px) {
+  .top-bar {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .top-bar {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .atalhos {
+    flex-wrap: wrap;
+    row-gap: 44px;
+  }
+
+  .download {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 520px) {
+  .atalhos a {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .download {
+    font-size: 1.1rem;
+    margin-left: 80px;
+  }
+
+  .download::before {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}

@@ -1,0 +1,131 @@
+main {
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.saudacao {
+  font: 600 2.2rem/1.35 "Libre Caslon Text";
+}
+
+.apresentacao {
+  font: 600 2.4rem/1.3 "Libre Caslon Text";
+}
+
+.apresentacao span {
+  color: var(--p1);
+}
+
+main img {
+  margin-top: 20px;
+  max-width: 55%;
+  margin-left: 12rem;
+  min-width: 180px;
+}
+
+.descricao {
+  margin-top: 8px;
+  font: 400 1.5rem/1.4 "Poppins";
+}
+
+.localizacao {
+  margin-top: 8px;
+  font: 400 1.25rem/1.6 "Poppins";
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.localizacao::after {
+  content: "";
+  margin-bottom: 2px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+
+  background: url("../img/localizacao.svg") no-repeat center;
+}
+
+.atalho-contato {
+  font: 600 2.1rem/1.3 "Libre Caslon Text";
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.atalho-contato::before {
+  content: "";
+  display: inline-block;
+  margin-right: 20px;
+  width: 54px;
+  height: 54px;
+  background: url("../img/botao-conversa.svg") no-repeat;
+}
+
+@media (max-width: 1000px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  main img {
+    display: none;
+  }
+
+  .logo::after {
+    content: "";
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background: url("../img/eu-perfil.jpg") no-repeat center;
+    background-size: contain;
+    left: 580px;
+    top: -15px;
+  }
+}
+@media (max-width: 840px) {
+  .logo::after {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo::after {
+    display: block;
+    left: 240px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .logo img {
+    height: 32px;
+    margin-left: 32px;
+  }
+
+  main {
+    padding-top: 40px;
+  }
+
+  .saudacao {
+    font-size: 1.7rem;
+  }
+
+  .apresentacao {
+    font-size: 1.8rem;
+  }
+
+  .descricao {
+    font-size: 1.2rem;
+  }
+
+  .localizacao {
+    font-size: 1.1rem;
+  }
+
+  .atalho-contato {
+    font-size: 1.6rem;
+  }
+
+  .atalho-contato::before {
+    background-size: 48px;
+  }
+}
