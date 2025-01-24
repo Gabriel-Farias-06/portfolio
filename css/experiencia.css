@@ -159,7 +159,7 @@
   
   .experiencia-cards #primeiro h3 + h3::before,
   .experiencia-cards #segundo h3 + h3::before {
-    left: -150px;
+    left: -80px;
   }
 
   .experiencia-cards #primeiro h3 + h3::before,
