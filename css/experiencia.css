@@ -55,7 +55,7 @@
 .experiencia-cards #segundo h3 + h3::before {
   display: inline-block;
   position: absolute;
-  left: -110px;
+  left: -130px;
   top: -2px;
   font: 400 0.875rem/1.5 "Poppins";
   color: var(--c8);
