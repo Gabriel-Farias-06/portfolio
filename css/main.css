@@ -91,7 +91,7 @@ main img {
 @media (max-width: 480px) {
   .logo::after {
     display: block;
-    left: 240px;
+    left: 220px;
     width: 90px;
     height: 90px;
   }

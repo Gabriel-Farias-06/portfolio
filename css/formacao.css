@@ -144,6 +144,10 @@
     left: -32px;
   }
 
+  .conhecimentos > li {
+    margin-left: 16px;
+  }
+
   .formacao-cards li {
     padding: 0.9rem 1.1rem 1rem 1.1rem;
   }
