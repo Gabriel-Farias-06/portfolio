@@ -1,9 +1,9 @@
 .footer-bg {
-  background-color: var(--c14);
+  background-color: var(--c13);
 }
 
 #footer {
-  padding: 12rem 9rem 2.4rem 5.7rem;
+  padding: 7rem 9rem 2.4rem 5.7rem;
   color: var(--c0);
 }
 
@@ -15,8 +15,8 @@
 
 .footer-conteudo p {
   padding-top: 36px;
-  font: 400 1.4rem/1.5 "Poppins";
-  max-width: 30ch;
+  font: 400 1.6rem/1.5 "Poppins";
+  max-width: 29ch;
   min-width: 20ch;
   position: relative;
 }
@@ -32,19 +32,26 @@
 }
 
 .contatos a {
-  margin-bottom: 8px;
+  padding-top: 12px;
   display: block;
-  font: 700 2rem/1.3 "Poppins";
-}
-.contatos ul {
-  margin-top: 40px;
-  display: flex;
-  column-gap: 60px;
+  font: 700 1.6rem/1.3 "Poppins";
 }
 
-footer > p {
-  font: 400 1.1rem/1.5 "Poppins";
-  margin: 9rem 0px 0px 19rem;
+.contatos a:hover {
+  color: var(--p1);
+  text-decoration: underline;
+}
+
+.contatos ul {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 40px;
+}
+
+#copyrigth {
+  font: 400 1.2rem/1.5 "Poppins";
+  margin-top: 80px;
+  text-align: center;
 }
 
 @media (max-width: 1100px) {
@@ -52,7 +59,7 @@ footer > p {
     padding: 5rem 7rem 1.8rem 1rem;
   }
 
-  footer > p {
+  #copyrigth {
     font-size: 0.9rem;
     margin: 4rem 0px 0px 8rem;
   }
@@ -114,7 +121,7 @@ footer > p {
     row-gap: 1rem;
   }
 
-  footer > p {
+  #copyrigth {
     font-size: 0.7rem;
     white-space: nowrap;
     margin-left: 4.5rem;

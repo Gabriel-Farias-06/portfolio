@@ -7,10 +7,15 @@
   position: relative;
 }
 
+.download:hover {
+  color: var(--p1);
+}
+
 .atalhos a {
   font: 600 1.2rem/1.25 "Poppins";
   padding: 12px 24px;
-  background-color: var(--c1);
+  background-color: var(--c3);
+  color: var(--c11);
   border-radius: 4px;
 }
 
@@ -35,8 +40,6 @@
 
 .download::before {
   content: "";
-  margin-right: 8px;
-  background: url("../img/download.svg") no-repeat center;
   width: 2rem;
   height: 2rem;
 }
@@ -65,17 +68,21 @@
 
 @media (max-width: 520px) {
   .atalhos a {
-    font-size: 1rem;
-    padding: 8px 16px;
+    font-size: 0.8rem;
+    padding: 4px 8px;
   }
 
   .download {
-    font-size: 1.1rem;
-    margin-left: 80px;
+    font-size: 1.2rem;
+    margin-left: 30px;
   }
 
   .download::before {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 32px;
+    height: 32px;
+  }
+
+  .top-bar {
+    gap: 12px;
   }
 }
